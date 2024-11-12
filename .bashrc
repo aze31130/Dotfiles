@@ -1,18 +1,23 @@
 #
 # ~/.bashrc
 #
+
 # If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 # Loading aliases
 source ~/.bash_aliases
 source ~/.bash_functions
 
+# Env variables
+export LANG=fr_FR.UTF-8
+export TERMINAL=alacritty
+export TERM=xterm-256color
 export EDITOR=nano
-export HISTSIZE=1000000
+export PAGER=most
+export HISTSIZE=100000000
+export SAVEHIST=100000000
 
-[[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
 RED="\[\e[32;31m\]"
 GREEN="\[\e[32;29m\]"
 RESET="\[\e[0m\]"
