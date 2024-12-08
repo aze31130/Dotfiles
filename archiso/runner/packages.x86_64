@@ -7,7 +7,6 @@ linux
 mkinitcpio
 mkinitcpio-archiso
 nano
-pv
 qemu-guest-agent
 memtest86+
 memtest86+-efi
